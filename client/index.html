@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html ng-app="app">
+  <head>
+    <meta charset="utf-8">
+    <title>Jian Zhang's Portfolio</title>
+        <!--Import Google Icon Font-->
+        <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
+        <!--Import materialize.css-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css">
+        <!--Let browser know website is optimized for mobile-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+        <style>
+            body{
+                font-family: 'Roboto Slab', serif;
+                font-weight: 200;
+            }
+            #intro{
+                height: 750px;
+            }
+            .thin-text{
+                font-weight: 300;
+                background: rgba(96,125,139,.4);
+                padding: 40px;
+                border-radius: 10px;
+            }
+            img{
+                max-width: 100%;
+                max-height: 100%;
+            }
+
+        </style>
+        <!--Import jQuery before materialize.js-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
+        <script src="angular/angular.js" charset="utf-8"></script>
+        <script src="angular-route/angular-route.js" charset="utf-8"></script>
+        <script src="assets/app.js" charset="utf-8"></script>
+        <script src="assets/factories/mainFactory.js" charset="utf-8"></script>
+        <script src="assets/controllers/mainController.js" charset="utf-8"></script>
+        <script>
+            $(document).ready(function(){
+             $('.parallax').parallax();
+            });
+        </script>
+  </head>
+  <body>
+
+      <!-- header -->
+      <div id="intro" class="parallax-container valign-wrapper">
+           <div class="container">
+               <div class="row">
+                   <div class="col l11 s12 white-text">
+                       <h4 class="thin-text valign" style="text-align:center">Hi, I'm Jian Zhang.<br /> A full-stack web developer.</h4>
+                   </div>
+               </div>
+               <div class="row">
+                   <div class="col l5">
+                       &nbsp;
+                   </div>
+                   <div class="col l4">
+                       <a href="#contact" class="waves-effect btn-large hoverable red accent-2">Contact Me</a>
+                   </div>
+               </div>
+           </div>
+           <div class="parallax"><img src="assets/img/coffee1.jpg"></div>
+      </div>
+
+
+      <!-- portfolios -->
+      <div class="section blue-grey lighten-3">
+            <div class="row">
+                <div class="col l12 s12 white-text">
+                    <h4 class="thin-text valign" style="text-align:center">{ PORTFOLIOS }</h4>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col s12 m6">
+                    <div class="card hoverable">
+                        <div class="card-image">
+                            <img src="assets/img/chatterbox.png" />
+                        </div>
+                        <div class="card-content">
+                            <p>** Built with: Angular.js, Socket.io, MongoDB, Express.js, Node.js, Bootstrap, JavaScript **</p>
+                            <br />
+                            <p>Desciption: ChattrBox is a full, real-time chat app that connects users. Utilizes the Angular.js front-end framework along with Sockets.io to update messages received on the client for users in real-time without the need to refresh the browser at any point. Also utilizes Angular Material and Bootstrap. MongoDB is used as a NoSQL database for data storage.</p>
+                            <br />
+                            <p style="text-align:center"><a href="https://github.com/VT-Zhang/ChatterBox" target="_blank"> View <img src="assets/img/logo.ico" /> Code</a></p>
+                        </div>
+                        <div class="card-action" style="text-align:center">
+                            <a href="http://www.chattrbox.us" target="_blank">www.chattrbox.us</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col s12 m6">
+                    <div class="card hoverable">
+                        <div class="card-image">
+                            <img src="assets/img/toys.png" />
+                        </div>
+                        <div class="card-content">
+                            <p>** Build with: Python, Django, Materialize-CSS, MySQL, jQuery, JavaScript, CSS, HTML5 **</p>
+                            <br />
+                            <p>Description: ToysXchange is a posting board app allowing users to post unwanted toys for exchanges. A Twitter-like posting wall GUI, utilizing Google Map API to show the approximate location of the toys. Users are able to conduct the exchange through emails. Python/Django used for back-end framework. Materialize-CSS used for the front-end design.</p>
+                            <br />
+                            <p style="text-align:center"><a href="https://github.com/VT-Zhang/ToysXchange" target="_blank"> View <img src="assets/img/logo.ico" /> Code</a></p>
+                        </div>
+                        <div class="card-action" style="text-align:center">
+                            <a href="http://www.toysxchange.us" target="_blank">www.toysxchange.us</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col s12 m6">
+                    <div class="card hoverable">
+                        <div class="card-image">
+                            <img src="assets/img/hitchr.png" />
+                        </div>
+                        <div class="card-content">
+                            <p>** Build with: Ruby, Rails, MySQL, jQuery, JavaScript, CSS, HTML5 **</p>
+                            <br />
+                            <p>Desciption: Hitch-r allows people embarking on a trip to post their trip information and connect with other potential riders and build an effective and simple ride-share. Using the Google Maps API this application provided real time travel data and allowed riders and drivers to seamlessly connect. Implemented MaterializeCSS as a front-end CSS framework.</p>
+                            <br />
+                            <p style="text-align:center"><a href="https://github.com/VT-Zhang/HitchrIII" target="_blank"> View <img src="assets/img/logo.ico" /> Code</a></p>
+                        </div>
+                        <div class="card-action" style="text-align:center">
+                            <a href="http://www.hitch-r.com" target="_blank">www.hitch-r.com</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s12 m6">
+                    <div class="card hoverable">
+                        <div class="card-image">
+                            <img src="assets/img/github.png" />
+                        </div>
+                        <div class="card-content">
+                            <p>** Ruby, Rails, MySQL, jQuery, JavaScript, CSS, HTML5 **</p>
+                            <br />
+                            <p>Desciption: Allows people embarking on a trip to post their trip information and connect with other potential riders and build an effective and simple ride-share. Using the Google Maps API this application provided real time travel data and allowed riders and drivers to seamlessly connect. Implemented MaterializeCSS as a front-end CSS framework.</p>
+                            <br />
+                            <p style="text-align:center"><a href="https://github.com/VT-Zhang" target="_blank"> View <img src="assets/img/logo.ico" /> Code</a></p>
+                        </div>
+                        <div class="card-action" style="text-align:center">
+                            <a href="http://www.GitHub.com/VT-Zhang" target="_blank">www.GitHub.com/VT-Zhang</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </div>
+
+      <!-- contact info -->
+      <div class="section blue">
+          <div class="container white-text" style="text-align:center">
+              <div class="row">
+                  <div id="contact" class="col l12" >
+                      <h4>Let's Get In Touch</h4>
+                  </div>
+              </div>
+              <div class="row">
+                  <div class="col l4 m4 s12">
+                      <i class="medium material-icons">phone</i> <h5>202.812.3078</h5>
+                  </div>
+                  <div class="col l4 m4 s12">
+                      <i class="medium material-icons">email</i> <h5>jianz@vt.edu</h5>
+                  </div>
+                  <div class="col l4 m4 s12">
+                      <a href="https://www.linkedin.com/in/jason-zhang/"><img src="assets/img/linkedin.ico" /></a> <h5>LinkedIn</h5>
+                  </div>
+              </div>
+          </div>
+      </div>
+
+      <div ng-view=""></div>
+  </body>
+</html>
