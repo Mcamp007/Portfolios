@@ -2,39 +2,61 @@
     $(document).ready(function(){
        $('.parallax').parallax();
        $('.scrollspy').scrollSpy({
-           scrollOffset:0
+           scrollOffset:40
        });
+       $('.modal').modal();
     });
+
 </script>
+
+<!-- top fixed navbar -->
+<div class="navbar-fixed">
+    <nav class="blue-grey lighten-3">
+        <div class="nav-wrapper">
+            <h4 class="brand-logo" style="margin-left:20px;">Jian Zhang</h4>
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#portfolios">Portfolios</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#header">Home</a></li>
+            </ul>
+        </div>
+    </nav>
+</div>
 
 <!-- header -->
 <div id="header" class="parallax-container valign-wrapper scrollspy">
      <div class="container">
          <br />
          <div class="row">
-             <div class="col l4 offset-l4">
+             <div class="center">
                  <img src="assets/img/jian.jpg" class="circle responsive-img" style="width: 300px;"/>
              </div>
          </div>
          <div class="row">
-             <div class="col l12 s12 white-text">
+             <div class="col l12 s12 white-text center">
                  <div class="thin-text valign" style="text-align:center">
                      <h3>Jian Zhang</h3>
                      <h5>Full-stack web and software developer</h5>
-                     <a href="#contact">Contact</a>
-                     <a href="#skills">Skills</a>
-                     <a href="#portfolios">Portfolios</a>
                  </div>
-
+                 <br />
+                 <a href="#resume" class="waves-effect waves-light btn">Resume</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                 <a href="assets/jian_zhang_resume.pdf" download="jian_zhang_resume.pdf" class="waves-effect waves-light btn">Download</a>
              </div>
-
          </div>
          <div class="row">
 
          </div>
      </div>
-     <div class="parallax"><img src="assets/img/coffee1.jpg" class="responsive-img"></div>
+     <div class="parallax"><img src="assets/img/notebook.jpg" class="responsive-img"></div>
 </div>
+
+<div id="resume" class="modal">
+   <div class="modal-content center">
+       <object data="assets/jian_zhang_resume.pdf" type="application/pdf" width="1000px" height="650px">
+       </object>
+   </div>
+ </div>
 
 <div id="skills" class="section center scrollspy">
     <br />
@@ -205,19 +227,21 @@
   </div>
 </div>
 
-<div id="mac" class="parallax-container valign-wrapper">
-    <div class="container">
-        <div class="row center">
-            <div class="col l10 offset-l1 valign">
-                <h3 class="center-align orange-text cta">Interested in working together?</h3>
+<div id="contact" class="section scrollspy">
+    <div class="parallax-container valign-wrapper">
+        <div class="container">
+            <div class="row center">
+                <div class="col l10 offset-l1 valign">
+                    <h3 class="center-align orange-text cta">Interested in working together?</h3>
+                </div>
             </div>
         </div>
+        <div class="parallax"><img src="assets/img/mac.jpg" class="responsive-img"></div>
     </div>
-    <div class="parallax"><img src="assets/img/mac.jpg" class="responsive-img"></div>
 </div>
 
 <!-- contact info -->
-<div id="contact" class="section blue scrollspy">
+<div id="info" class="section blue scrollspy">
     <div class="container white-text" style="text-align:center">
         <div class="row">
             <div class="col l12" >
