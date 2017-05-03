@@ -1,11 +1,14 @@
 <script>
     $(document).ready(function(){
        $('.parallax').parallax();
+       $('.scrollspy').scrollSpy({
+           scrollOffset:0
+       });
     });
 </script>
 
 <!-- header -->
-<div id="header" class="parallax-container valign-wrapper">
+<div id="header" class="parallax-container valign-wrapper scrollspy">
      <div class="container">
          <br />
          <div class="row">
@@ -18,6 +21,9 @@
                  <div class="thin-text valign" style="text-align:center">
                      <h3>Jian Zhang</h3>
                      <h5>Full-stack web and software developer</h5>
+                     <a href="#contact">Contact</a>
+                     <a href="#skills">Skills</a>
+                     <a href="#portfolios">Portfolios</a>
                  </div>
 
              </div>
@@ -30,7 +36,7 @@
      <div class="parallax"><img src="assets/img/coffee1.jpg" class="responsive-img"></div>
 </div>
 
-<div class="section center">
+<div id="skills" class="section center scrollspy">
     <br />
     <div class="row">
         <div class="col l2 m2 s6">
@@ -89,7 +95,7 @@
             <img src="assets/img/mamp.png" style="width: 165px; height:auto"/>
         </div>
         <div class="col l2 m3 s6">
-            <img src="assets/img/Octocat.png" style="width: 165px; height:auto"/>
+            <img src="assets/img/postgres.png" style="width: 165px; height:auto"/>
         </div>
     </div>
     <div class="row">
@@ -103,7 +109,7 @@
             <img src="assets/img/socket.png" style="width: 165px; height:auto"/>
         </div>
         <div class="col l2 m3 s6">
-            <img src="assets/img/postgres.png" style="width: 165px; height:auto"/>
+            <img src="assets/img/octocat.png" style="width: 165px; height:auto"/>
         </div>
         <div class="col l2 m3 s6">
             <img src="assets/img/terminal.png" style="width: 165px; height:auto"/>
@@ -117,7 +123,7 @@
 
 
 <!-- portfolios -->
-<div class="section">
+<div id="portfolios" class="section scrollspy">
       <div class="row">
           <div class="col l12 s12 white-text">
               <h4 class="thin-text valign" style="text-align:center">{ PORTFOLIOS }</h4>
@@ -211,10 +217,10 @@
 </div>
 
 <!-- contact info -->
-<div class="section blue">
+<div id="contact" class="section blue scrollspy">
     <div class="container white-text" style="text-align:center">
         <div class="row">
-            <div id="contact" class="col l12" >
+            <div class="col l12" >
                 <h4>Let's Get In Touch</h4>
             </div>
         </div>
