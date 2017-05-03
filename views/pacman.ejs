@@ -11,6 +11,7 @@
             body{
                 background-color: black;
                 margin:0px;
+                /*outline: 1px dotted yellow;*/
                 color: white;
                 font-family: 'Press Start 2P', cursive;
 
@@ -25,12 +26,12 @@
 
             }
             .coin{
-                background-image: url("partials/coin.gif");
+                background-image: url("coin.gif");
                 background-position: center;
                 background-repeat: no-repeat;
             }
             #pacman{
-                background-image: url("partials/pacman.gif");
+                background-image: url("pacman.gif");
                 background-position: center;
                 background-repeat: no-repeat;
                 background-size: cover;
@@ -44,13 +45,13 @@
             }
 
             .cherry{
-                background-image: url("partials/cherry.png");
+                background-image: url("cherry.png");
                 background-position: center;
                 background-repeat: no-repeat;
                 background-size: cover;
             }
             .ghost{
-                background-image: url("partials/ghost.gif");
+                background-image: url("ghost.gif");
                 background-position: center;
                 background-repeat: no-repeat;
                 background-size: cover;
@@ -130,7 +131,7 @@
         </style>
     </head>
     <body>
-        <audio src="partials/pacman_beginning.wav" autoplay></audio>
+        <audio src="pacman_beginning.wav" autoplay></audio>
         <div id='header'>Pacman 1.0 by Jian Zhang</div>
         <div id='score_box'>
             <div id='title'>SCORE</div>
@@ -164,9 +165,9 @@
 
             var score = 0;
 
-            var audio = new Audio('partials/pacman_eat.wav');
-            var audio1 = new Audio('partials/pacman_fruit.wav');
-            var audio2 = new Audio('partials/pacman_death.wav');
+            var audio = new Audio('pacman_eat.wav');
+            var audio1 = new Audio('pacman_fruit.wav');
+            var audio2 = new Audio('pacman_death.wav');
 
 
             function displayWorld(){
